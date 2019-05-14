@@ -1,0 +1,91 @@
+{
+  "name": "chrome-tab-rotate-server",
+  "version": "1.0.0",
+  "description": "An API that provides the config/contents for the chrome-tab-rotate Chrome extension",
+  "main": "src/index.js",
+  "scripts": {
+    "start": "node src/index",
+    "pretest": "eslint ./src",
+    "test": "./node_modules/.bin/mocha --reporter spec",
+    "test:coverage": "./node_modules/.bin/nyc npm test",
+    "test:functional": "./node_modules/.bin/mocha --reporter spec ./test/functional",
+    "test:all": "./node_modules/.bin/run-s test:functional test:coverage",
+    "docker:status": "node src/healthcheck"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/timoa/chrome-tab-rotate-server.git"
+  },
+  "keywords": [
+    "chrome",
+    "chrome-tabs",
+    "chrome-extension",
+    "api",
+    "server",
+    "config"
+  ],
+  "author": {
+    "name": "Damien Laureaux",
+    "email": "d.laureaux@timoa.com",
+    "url": "https://timoa.com"
+  },
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/timoa/chrome-tab-rotate-server/issues"
+  },
+  "homepage": "https://github.com/timoa/chrome-tab-rotate-server#readme",
+  "dependencies": {
+    "boom": "^7.3.0",
+    "fastify": "^1.14.1",
+    "fastify-healthcheck": "^1.0.0",
+    "fastify-swagger": "^1.2.0",
+    "http": "0.0.0",
+    "lodash": "^4.17.11",
+    "winston": "^3.2.1"
+  },
+  "engines": {
+    "node": ">=8.0"
+  },
+  "os": [
+    "linux",
+    "win32",
+    "darwin"
+  ],
+  "devDependencies": {
+    "acorn": "^6.0.4",
+    "acorn-jsx": "^5.0.0",
+    "chai": "^4.2.0",
+    "eslint": "^5.9.0",
+    "eslint-config-airbnb": "^17.1.0",
+    "eslint-plugin-import": "^2.14.0",
+    "eslint-plugin-jsx-a11y": "^6.1.2",
+    "eslint-plugin-react": "^7.11.1",
+    "espree": "^4.1.0",
+    "mocha": "^5.2.0",
+    "npm-run-all": "^4.1.5",
+    "nyc": "^14.1.1",
+    "request": "^2.88.0"
+  },
+  "nyc": {
+    "check-coverage": true,
+    "lines": 0,
+    "statements": 0,
+    "functions": 0,
+    "branches": 0,
+    "reporter": [
+      "lcov",
+      "text-summary"
+    ],
+    "include": [
+      "src/*.js",
+      "src/**/*.js"
+    ],
+    "exclude": [
+      "test/*.spec.js",
+      "coverage/**",
+      "src/swagger/*.js",
+      "data/**/*"
+    ],
+    "all": true
+  }
+}
