@@ -1,4 +1,4 @@
-# Chrome-tab-rotate config server
+# WIP - Chrome-tab-rotate config server
 
 [![Build Status][travis-badge]][travis-url]
 [![Docker Pulls][docker-badge]][docker-url]
