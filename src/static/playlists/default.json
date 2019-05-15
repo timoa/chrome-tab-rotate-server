@@ -1,0 +1,17 @@
+{
+  "settingsReloadIntervalMinutes": 120,
+  "fullscreen": true,
+  "autoStart": true,
+  "websites": [
+    {
+      "url": "https://play.grafana.org/d/000000003/big-dashboard?orgId=1&kiosk=tv",
+      "duration": 30,
+      "tabReloadIntervalSeconds": 3600
+    },
+    {
+      "url": "https://play.grafana.org/d/000000110/business-metrics?orgId=1&kiosk=tv",
+      "duration": 30,
+      "tabReloadIntervalSeconds": 3600
+    }
+  ]
+}
