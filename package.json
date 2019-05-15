@@ -47,7 +47,11 @@
   "engines": {
     "node": ">=10.0"
   },
-  "os": ["linux", "win32", "darwin"],
+  "os": [
+    "linux",
+    "win32",
+    "darwin"
+  ],
   "devDependencies": {
     "acorn": "^6.0.4",
     "acorn-jsx": "^5.0.0",
@@ -70,8 +74,14 @@
     "statements": 0,
     "functions": 0,
     "branches": 0,
-    "reporter": ["lcov", "text-summary"],
-    "include": ["src/*.js", "src/**/*.js"],
+    "reporter": [
+      "lcov",
+      "text-summary"
+    ],
+    "include": [
+      "src/*.js",
+      "src/**/*.js"
+    ],
     "exclude": [
       "test/*.spec.js",
       "coverage/**",
