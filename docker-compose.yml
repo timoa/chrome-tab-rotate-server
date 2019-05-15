@@ -1,0 +1,11 @@
+version: '3.3'
+
+services:
+  api:
+    image: timoa/chrome-tab-rotate-server:latest
+    environment:
+      - NODE_ENV=production
+      - NODE_HOST=0.0.0.0
+    ports:
+      - 8000:8000
+    restart: always
