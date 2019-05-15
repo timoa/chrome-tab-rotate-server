@@ -1,0 +1,20 @@
+# https://docs.docker.com/engine/reference/builder/#dockerignore-file
+# Don't send the following files to the docker daemon as the build context.
+
+.git
+.gitattributes
+.travis.yml
+README.md
+docker-compose.yml
+**/node_modules
+**/npm-debug.log
+
+# Ignore .DS_Store Mac file
+.DS_Store
+# SonarQube Lint
+.sonarlint
+# MongoDB volume folder
+data
+# Test coverage
+coverage
+.nyc_output
