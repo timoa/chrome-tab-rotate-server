@@ -1,0 +1,8 @@
+{
+  "app": {
+    "port": 8000
+  },
+  "healthCheck": {
+    "path": "_health"
+  }
+}
