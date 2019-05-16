@@ -2,6 +2,7 @@
   "settingsReloadIntervalMinutes": 120,
   "fullscreen": true,
   "autoStart": true,
+  "lazyLoadTabs": false,
   "websites": [
     {
       "url": "https://play.grafana.org/d/000000003/big-dashboard?orgId=1&kiosk=tv",
