@@ -1,10 +1,10 @@
-const configController = require('../controllers/configController');
+const playlistController = require('../controllers/playlistController');
 
 const routes = [
   {
     method: 'GET',
-    url: '/api/config',
-    handler: configController.getConfig
+    url: '/',
+    handler: playlistController.getPlaylist
   }
 ];
 

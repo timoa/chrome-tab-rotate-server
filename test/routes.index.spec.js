@@ -7,8 +7,8 @@ describe('Routes', () => {
     expect(routes).to.be.an('array');
     done();
   });
-  it('expect the first route URL to be "/api/config"', done => {
-    expect(routes[0].url).to.be.equals('/api/config');
+  it('expect the first route URL to be "/"', done => {
+    expect(routes[0].url).to.be.equals('/');
     done();
   });
 });

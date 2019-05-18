@@ -6,7 +6,7 @@ const logger = require('../lib/logger');
 const network = require('../lib/network');
 const inventory = require('../static/inventory.json');
 
-const getConfigPath = (request) => {
+const getPlaylistPath = (request) => {
   
   // Default
   let pathname = path.join(__dirname, '../static/playlists');
@@ -30,9 +30,9 @@ const getConfigPath = (request) => {
 };
 
 // Get secrets by ID
-exports.getConfig = async (request, reply) => {
+exports.getPlaylist = async (request, reply) => {
   try {
-    const pathname = getConfigPath(request);
+    const pathname = getPlaylistPath(request);
 
     fs.exists(pathname, (exist) => {
       if (!exist) {
