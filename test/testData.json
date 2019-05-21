@@ -8,10 +8,10 @@
   }, {
     "request": {
       "headers": {
-        "x-forwarded-for": "10.0.0.1"
+        "x-forwarded-for": "10.0.0.2"
       },
-      "ip": "172.16.0.1"
+      "ip": "172.16.0.2"
     },
-    "expectedIp": "10.0.0.1"
+    "expectedIp": "10.0.0.2"
   }]
 }

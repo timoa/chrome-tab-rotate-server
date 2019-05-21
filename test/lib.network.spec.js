@@ -20,8 +20,8 @@ describe('Network library', () => {
     expect(lib.getIp(testData.network[0].request)).to.be.equals('10.0.0.1');
     done();
   });
-  it('expect "getIp" to return "10.0.0.1" with HTTP proxy', done => {
-    expect(lib.getIp(testData.network[1].request)).to.be.equals('10.0.0.1');
+  it('expect "getIp" to return "10.0.0.2" with HTTP proxy', done => {
+    expect(lib.getIp(testData.network[1].request)).to.be.equals('10.0.0.2');
     done();
   });
 });
