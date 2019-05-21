@@ -22,7 +22,7 @@ const getPlaylistPath = (request) => {
 
   pathname = path.join(pathname, filename);
 
-  logger.info(`[${ip}] ${request.method} ${request.url}  => ${filename}`);
+  logger.info(`[${ip}] ${request.raw.method} ${request.raw.url} => ${filename}`);
 
   return pathname;
 };
