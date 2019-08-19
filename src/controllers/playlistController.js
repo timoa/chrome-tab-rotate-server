@@ -6,7 +6,6 @@ const playlist = require('../lib/playlist');
 // Get secrets by ID
 exports.getPlaylist = async (request, reply) => {
   try {
-
     const pathname = playlist.getPlaylistPath(request);
 
     fs.exists(pathname, (exist) => {
