@@ -11,10 +11,11 @@ docker-compose.yml
 
 # Ignore .DS_Store Mac file
 .DS_Store
-# SonarQube Lint
+
+# SonarQube
+.scannerwork
 .sonarlint
-# MongoDB volume folder
-data
+
 # Test coverage
 coverage
 .nyc_output
