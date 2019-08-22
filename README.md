@@ -14,8 +14,8 @@
 An API that provides the config/contents for the chrome-tab-rotate Chrome extension
 
 [sonarcloud]: https://sonarcloud.io/about
-[travis-badge]: https://travis-ci.org/timoa/chrome-tab-rotate-server.svg?branch=master
-[travis-url]: https://travis-ci.org/timoa/chrome-tab-rotate-server
+[travis-badge]: https://travis-ci.com/timoa/chrome-tab-rotate-server.svg?branch=master
+[travis-url]: https://travis-ci.com/timoa/chrome-tab-rotate-server
 [docker-badge]: https://img.shields.io/docker/pulls/timoa/chrome-tab-rotate-server.svg
 [docker-url]: https://hub.docker.com/r/timoa/chrome-tab-rotate-server
 [sonarcloud-url]: https://sonarcloud.io/dashboard?id=timoa_chrome-tab-rotate-server
