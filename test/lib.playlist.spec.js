@@ -15,12 +15,12 @@ describe('Playlist library', () => {
       done();
     });
     it('expect the "getPlaylistPath()" to output the "screen01.json" file path', done => {
-      const screen01Path = `${(__dirname).replace(/test/, '')}src/static/playlists/screen01.json`;
+      const screen01Path = `${(__dirname).replace(/test/, '')}static/playlists/screen01.json`;
       expect(lib.getPlaylistPath(testData.network[0].request)).to.be.equals(screen01Path);
       done();
     });
     it('expect the "getPlaylistPath()" to output the "screen02.json" file path', done => {
-      const screen02Path = `${(__dirname).replace(/test/, '')}src/static/playlists/screen02.json`;
+      const screen02Path = `${(__dirname).replace(/test/, '')}static/playlists/screen02.json`;
       expect(lib.getPlaylistPath(testData.network[1].request)).to.be.equals(screen02Path);
       done();
     });
