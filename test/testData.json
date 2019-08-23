@@ -2,16 +2,25 @@
   "network": [{
     "request": {
       "headers": {},
-      "ip": "10.0.0.1"
+      "ip": "127.0.0.1"
     },
-    "expectedIp": "10.0.0.1"
+    "expectedIp": "127.0.0.1"
   }, {
     "request": {
       "headers": {
-        "x-forwarded-for": "10.0.0.2"
+        "x-forwarded-for": "127.0.0.1"
       },
       "ip": "172.16.0.2"
     },
-    "expectedIp": "10.0.0.2"
+    "expectedIp": "127.0.0.1"
+  }],
+  "file": [{
+    "request": {
+      "headers": {},
+      "ip": "127.0.0.1",
+      "raw": {
+        "url": "/file/example.png"
+      }
+    }
   }]
 }
