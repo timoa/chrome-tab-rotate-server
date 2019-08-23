@@ -3,7 +3,11 @@ const fs = require('fs');
 
 const playlist = require('../lib/playlist');
 
-// Get secrets by ID
+/**
+ * 
+ * @param {Object} request  Fastify request object
+ * @param {Function} reply  Fastify reply callback  
+*/
 exports.getPlaylist = async (request, reply) => {
   try {
     const pathname = playlist.getPlaylistPath(request);

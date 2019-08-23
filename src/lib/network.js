@@ -3,7 +3,8 @@
  * Return the IP of the screen
  * Support detection with or without proxy
  * 
- * @param {Object} request Fastify request object
+ * @param {Object} request  Fastify request object
+ * @returns {String}        IP
  */
 const getIp = (request) => {
   let ip = '127.0.0.1';
