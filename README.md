@@ -1,4 +1,4 @@
-# WIP - Chrome-tab-rotate config server
+# WIP - Chrome-tab-rotate Webserver
 
 [![Build Status][travis-badge]][travis-url]
 [![Docker Pulls][docker-badge]][docker-url]
@@ -11,15 +11,27 @@
 [![Coverage][sonarcloud-coverage-badge]][sonarcloud-url]
 [![Duplicated Lines (%)][sonarcloud-duplicated-badge]][sonarcloud-url]
 
-An API that provides the config/contents for the [Tab Rotate][tab-rotate-chrome-extension] Chrome extension.
+A Webserver that provides the config/contents for the [Tab Rotate][tab-rotate-chrome-extension] Chrome extension.
 
 The Chrome extension is open-source as [chrome-tab-rotate][chrome-tab-rotate-github].
+
+## Status
+
+This project is still in development but functionnal :)
+
+## API Endpoints
+
+| Name | Method | Endpoint | Description |
+| --- | --- | --- | --- |
+| Playlist | `GET` | `/` | Provides the playlist based on the IP that request the endpoint or the `default` one|
+| Content | `GET` | `/content/:path` | Serve the local content from the `path` from the `/public` folder |
+| Healthcheck | `GET` | `/_health` | Allow to perform a healthcheck to see if the app is still live |
 
 ## TODO
 
 * Split configuration for the screens and playlists
 * Allow to edit the playlists and screens via a CMS instead of JSON files
-* Support multiple Chrome instance for the same IP (2x screens on the same RPi 4 for ex.)
+* Support multiple Chrome instances for the same IP (2x screens on the same RPi 4 for ex.)
 
 [tab-rotate-chrome-extension]: https://chrome.google.com/webstore/detail/tab-rotate/pjgjpabbgnnoohijnillgbckikfkbjed
 [chrome-tab-rotate-github]: https://github.com/KevinSheedy/chrome-tab-rotate
