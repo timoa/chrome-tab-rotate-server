@@ -46,24 +46,24 @@ const getMimeType = (ext) => {
 };
 
 /**
- * Get the file path from a URL
+ * Get the content path from a URL
  * @param {Object}    request   Request object
  * @returns {String}            Path name
  */
-const getFilePath = (request) => {
+const getContentPath = (request) => {
 
   // Detect the IP of the screen
   const ip = network.getIp(request);
 
-  // Remove the `/file` path from the URL requested
-  const requestedUrl = request.raw.url.replace('/file', '');
+  // Remove the `/content` path from the URL requested
+  const requestedUrl = request.raw.url.replace('/content', '');
 
-  // Get the full file path from the `public` folder
+  // Get the full content path from the `public` folder
   const pathname = path.join(__dirname, '../../public', sanitizePath(requestedUrl));
 
-  logger.info(`[${ip}] File: ${request.raw.url}`);
+  logger.info(`[${ip}] Content: ${request.raw.url}`);
 
   return pathname;
 };
 
-module.exports = { getMimeType, getFilePath };
+module.exports = { getMimeType, getContentPath };

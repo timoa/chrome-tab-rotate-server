@@ -1,5 +1,5 @@
 const playlistController = require('../controllers/playlistController');
-const fileController = require('../controllers/fileController');
+const contentController = require('../controllers/contentController');
 
 const routes = [
   {
@@ -9,8 +9,8 @@ const routes = [
   },
   {
     method: 'GET',
-    url: '/file/:path',
-    handler: fileController.getFile
+    url: '/content/:path',
+    handler: contentController.getContent
   }
 ];
 

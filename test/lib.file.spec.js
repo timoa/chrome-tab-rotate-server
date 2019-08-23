@@ -3,7 +3,7 @@ const { expect } = require('chai');
 const lib = require('../src/lib/file');
 const testData = require('./testData.json');
 
-// Lib > Playlist
+// Lib > File
 describe('File library', () => {
   describe('getMimeType()', () => {
     it('expect "getMimeType()" to exists and be a function', (done) => {
@@ -42,18 +42,18 @@ describe('File library', () => {
     });
   });
 
-  describe('getFilePath()', () => {
-    it('expect "getFilePath()" to exists and be a function', (done) => {
-      expect(typeof lib.getFilePath).to.be.equals('function');
+  describe('getContentPath()', () => {
+    it('expect "getContentPath()" to exists and be a function', (done) => {
+      expect(typeof lib.getContentPath).to.be.equals('function');
       done();
     });
-    it('expect the "getFilePath()" function to throw without an argument', (done) => {
-      expect(lib.getFilePath).to.throw();
+    it('expect the "getContentPath()" function to throw without an argument', (done) => {
+      expect(lib.getContentPath).to.throw();
       done();
     });
-    it('expect the "getFilePath()" to output the "example.png" file path', (done) => {
-      const filePath = `${__dirname.replace(/test/, '')}public/example.png`;
-      expect(lib.getFilePath(testData.file[0].request)).to.be.equals(filePath);
+    it('expect the "getContentPath()" to output the "example.png" file path', (done) => {
+      const contentPath = `${__dirname.replace(/test/, '')}public/example.png`;
+      expect(lib.getContentPath(testData.content[0].request)).to.be.equals(contentPath);
       done();
     });
   });

@@ -14,12 +14,12 @@
     },
     "expectedIp": "127.0.0.1"
   }],
-  "file": [{
+  "content": [{
     "request": {
       "headers": {},
       "ip": "127.0.0.1",
       "raw": {
-        "url": "/file/example.png"
+        "url": "/content/example.png"
       }
     }
   }]

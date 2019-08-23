@@ -9,9 +9,9 @@ const file = require('../lib/file');
  * @param {Object} request  Fastify request object
  * @param {Function} reply  Fastify reply callback  
 */
-exports.getFile = async (request, reply) => {
+exports.getContent = async (request, reply) => {
   try {
-    const pathname = file.getFilePath(request);
+    const pathname = file.getContentPath(request);
     const { ext } = path.parse(pathname);
     const mimeType = file.getMimeType(ext);
 
