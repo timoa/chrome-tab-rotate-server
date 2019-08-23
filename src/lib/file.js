@@ -50,6 +50,7 @@ const getMimeType = (ext) => {
  * @returns {String}            Path name
  */
 const getFilePath = (request) => {
+
   // Detect the IP of the screen
   const ip = network.getIp(request);
 
@@ -59,7 +60,8 @@ const getFilePath = (request) => {
   // Get the full file path from the `public` folder
   const pathname = path.join(__dirname, '../../public', sanitizePath(requestedUrl));
 
-  logger.info(`[${ip}] File: ${request.raw.method} ${request.raw.url}`);
+  logger.info(`[${ip}] File: ${request.raw.url}`);
+  console.log(pathname);
 
   return pathname;
 };
