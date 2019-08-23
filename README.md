@@ -11,8 +11,18 @@
 [![Coverage][sonarcloud-coverage-badge]][sonarcloud-url]
 [![Duplicated Lines (%)][sonarcloud-duplicated-badge]][sonarcloud-url]
 
-An API that provides the config/contents for the chrome-tab-rotate Chrome extension
+An API that provides the config/contents for the [Tab Rotate][tab-rotate-chrome-extension] Chrome extension.
 
+The Chrome extension is open-source as [chrome-tab-rotate][chrome-tab-rotate-github].
+
+## TODO
+
+* Split configuration for the screens and playlists
+* Allow to edit the playlists and screens via a CMS instead of JSON files
+* Support multiple Chrome instance for the same IP (2x screens on the same RPi 4 for ex.)
+
+[tab-rotate-chrome-extension]: https://chrome.google.com/webstore/detail/tab-rotate/pjgjpabbgnnoohijnillgbckikfkbjed
+[chrome-tab-rotate-github]: https://github.com/KevinSheedy/chrome-tab-rotate
 [sonarcloud]: https://sonarcloud.io/about
 [travis-badge]: https://travis-ci.com/timoa/chrome-tab-rotate-server.svg?branch=master
 [travis-url]: https://travis-ci.com/timoa/chrome-tab-rotate-server
