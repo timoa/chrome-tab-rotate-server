@@ -32,10 +32,11 @@ const getMimeType = (ext) => {
   
   const mimeType = {
     '.html': 'text/html',
-    '.js': 'text/javascript',
+    '.htm': 'text/html',
     '.json': 'application/json',
     '.png': 'image/png',
     '.jpg': 'image/jpeg',
+    '.jpeg': 'image/jpeg',
     '.svg': 'image/svg+xml',
     '.pdf': 'application/pdf',
     '.doc': 'application/msword',
@@ -61,7 +62,6 @@ const getFilePath = (request) => {
   const pathname = path.join(__dirname, '../../public', sanitizePath(requestedUrl));
 
   logger.info(`[${ip}] File: ${request.raw.url}`);
-  console.log(pathname);
 
   return pathname;
 };
