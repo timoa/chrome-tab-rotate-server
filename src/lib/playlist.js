@@ -1,9 +1,14 @@
 const path = require('path');
 
-const logger = require('../lib/logger');
-const network = require('../lib/network');
+const logger = require('./logger');
+const network = require('./network');
 const inventory = require('../../static/inventory.json');
 
+/**
+ * 
+ * @param {Object} request  Fastify request object
+ * @returns {String}        Path name
+ */
 const getPlaylistPath = (request) => {
   
   // Default
