@@ -3,7 +3,7 @@ const logger = require('./lib/logger');
 const config = require('./config/config.json');
 const routes = require('./routes');
 
-const host = process.env.NODE_HOST || 'localhost';
+const host = process.env.NODE_HOST || '0.0.0.0';
 const port = process.env.NODE_PORT || config.app.port;
 
 // Register the Health plugin
