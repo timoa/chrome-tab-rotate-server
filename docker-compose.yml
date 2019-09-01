@@ -6,6 +6,11 @@ services:
     environment:
       - NODE_ENV=production
       - NODE_HOST=0.0.0.0
+    volumes:
+      - ./config:/opt/app/config
     ports:
       - 9000:9000
     restart: always
+  
+volumes:
+  config:

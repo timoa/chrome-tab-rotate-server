@@ -2,7 +2,7 @@ const path = require('path');
 
 const logger = require('./logger');
 const network = require('./network');
-const inventory = require('../../static/inventory.json');
+const inventory = require('../../config/inventory.json');
 
 /**
  * 
@@ -12,7 +12,7 @@ const inventory = require('../../static/inventory.json');
 const getPlaylistPath = (request) => {
   
   // Default
-  let pathname = path.join(__dirname, '../../static/playlists');
+  let pathname = path.join(__dirname, '../../config/playlists');
   let filename = 'default.json';
 
   // Detect the IP of the screen

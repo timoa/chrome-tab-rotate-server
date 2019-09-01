@@ -8,6 +8,8 @@ addons:
     organization: timoa-github
 before_script:
 - docker build -t timoa/chrome-tab-rotate-server .
+- cp -R src/examples/playlists config/playlists
+- cp src/examples/inventory.json config/inventory.json
 - docker-compose up -d
 - docker ps -a
 script:
