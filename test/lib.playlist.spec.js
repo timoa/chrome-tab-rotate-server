@@ -15,12 +15,12 @@ describe('Playlist library', () => {
       done();
     });
     it('expect the "getPlaylistPath()" to output the "localhost.json" file path', done => {
-      const configPath = `${(__dirname).replace(/test/, '')}static/playlists/localhost.json`;
+      const configPath = `${(__dirname).replace(/test/, '')}config/playlists/localhost.json`;
       expect(lib.getPlaylistPath(testData.network[0].request)).to.be.equals(configPath);
       done();
     });
     it('expect the "getPlaylistPath()" to output the "localhost.json" file path behind a proxy server', done => {
-      const configPath = `${(__dirname).replace(/test/, '')}static/playlists/localhost.json`;
+      const configPath = `${(__dirname).replace(/test/, '')}config/playlists/localhost.json`;
       expect(lib.getPlaylistPath(testData.network[1].request)).to.be.equals(configPath);
       done();
     });
