@@ -8,13 +8,12 @@ addons:
     organization: timoa-github
 before_script:
 - docker build -t timoa/chrome-tab-rotate-server .
-- cp -R src/examples/playlists/* config
+- cp -R src/examples/playlists config/playlists
 - cp src/examples/inventory.json config/inventory.json
 - docker-compose up -d
 - docker ps -a
 script:
 - npm run test:coverage
-- npm run test:functional
 - bash scripts/sonar_scanner.sh
 after_script:
 - docker-compose down
