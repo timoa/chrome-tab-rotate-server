@@ -1,4 +1,4 @@
-# WIP - Chrome-tab-rotate Webserver
+# Chrome-tab-rotate Webserver
 
 [![Build Status][travis-badge]][travis-url]
 [![Docker Pulls][docker-badge]][docker-url]
@@ -15,9 +15,86 @@ A Webserver that provides the config/contents for the [Tab Rotate][tab-rotate-ch
 
 The Chrome extension is open-source as [chrome-tab-rotate][chrome-tab-rotate-github].
 
-## Status
+> This project is part of a bigger project called [ScreenKit][screenkit-github] that includes the use of Raspberry PI, Chilipie Kiosk (Linux OS) that starts Chromium in fullscreen and other features, the Tab Rotate Chrome extension and this project that manage the contents and screens.
 
-This project is still in development but functionnal :)
+## Features
+
+* Simple way to rotate contents on multiple screens!
+* Allow to use multiple [Chrome Tab Rotate][tab-rotate-chrome-extension] config files (playlists)
+* Webserver (Fastify) that can serves playlists and local contents (images, videos, etc.)
+* Default playlist for new screens or for using the same content on all the screens
+* Custom playlist based on the IP of the screen (support also local proxy server)
+* Available as a Docker image or by using npm/pm2
+
+## Warning
+
+This project is meant to be use on a private network and not hosted on Internet.
+
+Currently, there is no authentication, that mean that any one in your local network can access to the playlist. Don't include any credential (Basic Auth or token) under your URLs if you want to keep them secret.
+
+Also don't add content that needs to stay private for the same reason.
+
+## How to start
+
+### Docker image
+
+#### Default with demo contents
+
+The simplest way to test this project is by using Docker. The command below will launch the server with the demo contents from the `src/examples/default.json` playlist.
+
+```bash
+docker-compose up
+```
+
+Now, you can see the Playlist (JSON format) from your browser or command line at [http://localhost:9000](http://localhost:9000)
+
+```bash
+curl http://localhost:9000
+```
+
+#### Customize with your own contents and screens
+
+Simply copy the config files from the `src/examples` folder to the `config` folder (root of the project) and update these JSON files:
+
+| From || To |
+|---|---|---|
+|`src/examples/inventory.json`|=>|`config/inventory.json`|
+|`src/examples/playlists/default.json`|=>|`config/playlists/default.json`|
+
+If you want to have a specific playlist per screen, just create a playlist that will use the screen name that you filled on the inventory file.
+
+For example, if you have the `monitoring-01` and `monitoring-02` in your your `inventory.json` file like this:
+
+```json
+{
+  "screens": [
+    {
+      "name": "monitoring-01",
+      "ip": "10.0.0.11"
+    },
+    {
+      "name": "monitoring-02",
+      "ip": "10.0.0.12"
+    }
+  ]
+}
+```
+
+You can create a playlist for each, by naming the file like this:
+
+`config/playlists/monitoring-01.json`
+`config/playlists/monitoring-02.json`
+
+Now, restart the Docker container to see the changes:
+
+```bash
+docker-compose down
+docker-compose up
+```
+
+```bash
+curl http://localhost:9000
+```
 
 ## API Endpoints
 
@@ -27,12 +104,45 @@ This project is still in development but functionnal :)
 | Content | `GET` | `/content/:path` | Serve the local content from the `path` from the `/public` folder |
 | Healthcheck | `GET` | `/_health` | Allow to perform a healthcheck to see if the app is still live |
 
+## Tests
+
+### API
+
+You can launch the Docker container or node.js app and test the endpoints with Postman:
+
+[![Run in Postman](https://run.pstmn.io/button.svg)](https://app.getpostman.com/run-collection/3b0cb7352985dbae6f99)
+
+### NPM
+
+#### Unit-tests
+
+```bash
+npm test
+```
+
+#### Coverage
+
+```bash
+npm run test:coverage
+```
+
+#### Functional
+
+```bash
+npm run test:functional
+```
+
+*Will be replace by `chai-http` soon.*
+
 ## TODO
 
-* Split configuration for the screens and playlists
+* Split screen configuration and playlist
+* Add an endpoint to get random content from a folder (images for ex.)
 * Allow to edit the playlists and screens via a CMS instead of JSON files
-* Support multiple Chrome instances for the same IP (2x screens on the same RPi 4 for ex.)
+* Allow to schedule specific content (JIRA board during morning standup for ex.)
+* Support multiple playlists for the same IP (2x HDMI on the RPi 4 for ex.)
 
+[screenkit-github]: https://github.com/timoa/screenkit
 [tab-rotate-chrome-extension]: https://chrome.google.com/webstore/detail/tab-rotate/pjgjpabbgnnoohijnillgbckikfkbjed
 [chrome-tab-rotate-github]: https://github.com/KevinSheedy/chrome-tab-rotate
 [sonarcloud]: https://sonarcloud.io/about
