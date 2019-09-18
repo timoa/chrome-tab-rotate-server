@@ -30,7 +30,7 @@ The Chrome extension is open-source as [chrome-tab-rotate][chrome-tab-rotate-git
 
 This project is meant to be use on a private network and not hosted on Internet.
 
-Currently, there is no authentication, that mean that any one in your local network can access to the playlist. Don't include any credential (Basic Auth or token) under your URLs if you want to keep them secret.
+Currently, there is no authentication, that mean that anyone in your local network can access to the playlist(s). Don't include any credential (Basic Auth or token) under your URLs if you want to keep them secret.
 
 Also don't add content that needs to stay private for the same reason.
 
