@@ -15,7 +15,7 @@ A Webserver that provides the config/contents for the [Tab Rotate][tab-rotate-ch
 
 The Chrome extension is open-source as [chrome-tab-rotate][chrome-tab-rotate-github].
 
-> This project is part of a bigger project called [ScreenKit][screenkit-github] that includes the use of Raspberry PI, Chilipie Kiosk (Linux OS) that starts Chromium in fullscreen and other features, the Tab Rotate Chrome extension and this project that manage the contents and screens.
+> This project is part of a bigger project called [ScreenKit][screenkit-github] that includes the use of Raspberry PI, [Chilipie Kiosk][chilipie-kiosk-github] (Linux OS) that starts [Chromium][chromium-project] in fullscreen and other features, the [Tab Rotate Chrome extension][tab-rotate-chrome-extension] and this project that manage the contents and screens.
 
 ## Features
 
@@ -142,9 +142,6 @@ npm run test:functional
 * Allow to schedule specific content (JIRA board during morning standup for ex.)
 * Support multiple playlists for the same IP (2x HDMI on the RPi 4 for ex.)
 
-[screenkit-github]: https://github.com/timoa/screenkit
-[tab-rotate-chrome-extension]: https://chrome.google.com/webstore/detail/tab-rotate/pjgjpabbgnnoohijnillgbckikfkbjed
-[chrome-tab-rotate-github]: https://github.com/KevinSheedy/chrome-tab-rotate
 [sonarcloud]: https://sonarcloud.io/about
 [travis-badge]: https://travis-ci.com/timoa/chrome-tab-rotate-server.svg?branch=master
 [travis-url]: https://travis-ci.com/timoa/chrome-tab-rotate-server
@@ -158,3 +155,8 @@ npm run test:functional
 [sonarcloud-codesmells-badge]: https://sonarcloud.io/api/project_badges/measure?project=timoa_chrome-tab-rotate-server&metric=code_smells
 [sonarcloud-coverage-badge]: https://sonarcloud.io/api/project_badges/measure?project=timoa_chrome-tab-rotate-server&metric=coverage
 [sonarcloud-duplicated-badge]: https://sonarcloud.io/api/project_badges/measure?project=timoa_chrome-tab-rotate-server&metric=duplicated_lines_density
+[screenkit-github]: https://github.com/timoa/screenkit
+[tab-rotate-chrome-extension]: https://chrome.google.com/webstore/detail/tab-rotate/pjgjpabbgnnoohijnillgbckikfkbjed
+[chrome-tab-rotate-github]: https://github.com/KevinSheedy/chrome-tab-rotate
+[chilipie-kiosk-github]: https://github.com/futurice/chilipie-kiosk
+[chromium-project]: https://www.chromium.org/
