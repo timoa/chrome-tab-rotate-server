@@ -96,6 +96,15 @@ docker-compose up
 curl http://localhost:9000
 ```
 
+### Configure the Tab Rotate Chrome extension
+
+Now that you have a web server up and running, you can set the options of the Tab Rotate Chrome extension to `Remote Url` and use:
+
+* `http://localhost:9000` if the webserver is running on the same host as your Chrome browser
+* `http://{ip of your webserver}:9000` if you're using a different host to test the Chrome Extension
+
+![Tab Rotate Chrome extension options][tab-rotate-chrome-extension-options]
+
 ## API Endpoints
 
 | Name | Method | Endpoint | Description |
@@ -157,6 +166,7 @@ npm run test:functional
 [sonarcloud-duplicated-badge]: https://sonarcloud.io/api/project_badges/measure?project=timoa_chrome-tab-rotate-server&metric=duplicated_lines_density
 [screenkit-github]: https://github.com/timoa/screenkit
 [tab-rotate-chrome-extension]: https://chrome.google.com/webstore/detail/tab-rotate/pjgjpabbgnnoohijnillgbckikfkbjed
+[tab-rotate-chrome-extension-options]: /doc/images/tab-rotate-options.jpg
 [chrome-tab-rotate-github]: https://github.com/KevinSheedy/chrome-tab-rotate
 [chilipie-kiosk-github]: https://github.com/futurice/chilipie-kiosk
 [chromium-project]: https://www.chromium.org/
