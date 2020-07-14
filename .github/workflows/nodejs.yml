@@ -24,6 +24,12 @@ jobs:
       - name: Install dependencies
         run: npm install
 
+      - name: Copy Playlists & Inventory examples
+        run: |
+          cp -R src/examples/playlists config/playlists
+          cp src/examples/inventory.json config/inventory.json
+
+
       - name: Run Unit-Tests + Code Coverage
         run: npm run test:coverage
 
@@ -67,12 +73,6 @@ jobs:
       - name: Build docker image
         run: docker build -t timoa/chrome-tab-rotate-server .
       
-      - name: Copy Playlists
-        run: cp -R src/examples/playlists config/playlists
-      
-      - name: Copy Inventory
-        run: cp src/examples/inventory.json config/inventory.json
-
       - name: Start Docker container
         run: docker-compose up -d
 
