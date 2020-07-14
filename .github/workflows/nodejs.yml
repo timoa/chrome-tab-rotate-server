@@ -91,7 +91,7 @@ jobs:
   # -- BUILD ------------------------------------------------------------------
   build:
     runs-on: ubuntu-latest
-    needs: functional-tests
+    needs: tests
     if: github.ref == 'refs/heads/master'
 
     steps:
