@@ -79,6 +79,9 @@ jobs:
       - name: Check Docker container status
         run: docker ps -a
 
+      - name: Install dependencies
+        run: npm install
+
       - name: Run Functional tests
         run: npm run test:functional
       
