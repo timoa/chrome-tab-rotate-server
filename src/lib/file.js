@@ -10,7 +10,7 @@ const network = require('./network');
  * @returns {String}              Sanitised path
  */
 const sanitizePath = (requestedUrl) => {
-  
+
   // Parse URL
   const parsedUrl = url.parse(requestedUrl);
 
@@ -29,7 +29,7 @@ const sanitizePath = (requestedUrl) => {
  * @returns {String}        MIME type
  */
 const getMimeType = (ext) => {
-  
+
   const mimeType = {
     '.html': 'text/html',
     '.htm': 'text/html',

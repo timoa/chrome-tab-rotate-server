@@ -5,9 +5,9 @@ const fs = require('fs');
 const file = require('../lib/file');
 
 /**
- * 
+ *
  * @param {Object} request  Fastify request object
- * @param {Function} reply  Fastify reply callback  
+ * @param {Function} reply  Fastify reply callback
 */
 exports.getContent = async (request, reply) => {
   try {

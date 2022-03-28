@@ -2,7 +2,7 @@
 /**
  * Return the IP of the screen
  * Support detection with or without proxy
- * 
+ *
  * @param {Object} request  Fastify request object
  * @returns {String}        IP
  */

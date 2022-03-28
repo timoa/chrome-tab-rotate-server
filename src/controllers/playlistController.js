@@ -4,9 +4,9 @@ const fs = require('fs');
 const playlist = require('../lib/playlist');
 
 /**
- * 
+ *
  * @param {Object} request  Fastify request object
- * @param {Function} reply  Fastify reply callback  
+ * @param {Function} reply  Fastify reply callback
 */
 exports.getPlaylist = async (request, reply) => {
   try {
