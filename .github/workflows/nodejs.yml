@@ -108,7 +108,7 @@ jobs:
   # -- BUILD ------------------------------------------------------------------
   build:
     runs-on: ubuntu-latest
-    needs: tests
+    needs: release
     if: github.ref == 'refs/heads/master'
 
     steps:
