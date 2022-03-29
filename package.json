@@ -1,6 +1,6 @@
 {
   "name": "chrome-tab-rotate-server",
-  "version": "1.1.6",
+  "version": "1.1.7",
   "description": "An API that provides the config/contents for the chrome-tab-rotate Chrome extension",
   "main": "src/index.js",
   "private": true,

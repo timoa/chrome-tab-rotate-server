@@ -1,3 +1,10 @@
+## [1.1.7](https://github.com/timoa/chrome-tab-rotate-server/compare/v1.1.6...v1.1.7) (2022-03-29)
+
+
+### Bug Fixes
+
+* **cicd:** try to fix Docker tags with latest value ([14ca3df](https://github.com/timoa/chrome-tab-rotate-server/commit/14ca3df6491f550ac6f0b7a2d171233cc2d10731))
+
 ## [1.1.6](https://github.com/timoa/chrome-tab-rotate-server/compare/v1.1.5...v1.1.6) (2022-03-29)
 
 
