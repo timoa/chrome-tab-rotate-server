@@ -1,3 +1,10 @@
+## [1.1.8](https://github.com/timoa/chrome-tab-rotate-server/compare/v1.1.7...v1.1.8) (2022-03-29)
+
+
+### Bug Fixes
+
+* **cicd:** add regex on metadata-docker to create the Docker tag ([845ac84](https://github.com/timoa/chrome-tab-rotate-server/commit/845ac84b94c1bf9c7b3b90b576d3569baf24509c))
+
 ## [1.1.7](https://github.com/timoa/chrome-tab-rotate-server/compare/v1.1.6...v1.1.7) (2022-03-29)
 
 
