@@ -140,8 +140,7 @@ jobs:
         id: meta
         uses: docker/metadata-action@v3
         with:
-          images: |
-            timoa/app-stores-prometheus-exporter
+          images: ${{ github.repository }}
           tags: |
             type=schedule
             type=ref,event=branch
