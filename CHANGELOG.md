@@ -1,3 +1,10 @@
+## [1.1.9](https://github.com/timoa/chrome-tab-rotate-server/compare/v1.1.8...v1.1.9) (2022-03-29)
+
+
+### Bug Fixes
+
+* **cicd:** last try to get the git tag for Docker tag creation ([a2c19c7](https://github.com/timoa/chrome-tab-rotate-server/commit/a2c19c722e49452e29e20402f15c4c0174c6d870))
+
 ## [1.1.8](https://github.com/timoa/chrome-tab-rotate-server/compare/v1.1.7...v1.1.8) (2022-03-29)
 
 
