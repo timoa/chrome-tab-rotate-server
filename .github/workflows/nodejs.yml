@@ -112,7 +112,9 @@ jobs:
   # -- RELEASE ----------------------------------------------------------------
   release:
     runs-on: ubuntu-latest
-    needs: tests
+    needs:
+      - code-quality
+      - code-security
     if: github.ref == 'refs/heads/master'
 
     steps:
