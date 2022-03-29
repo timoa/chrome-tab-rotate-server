@@ -1,3 +1,10 @@
+## [1.1.5](https://github.com/timoa/chrome-tab-rotate-server/compare/v1.1.4...v1.1.5) (2022-03-29)
+
+
+### Bug Fixes
+
+* **cicd:** fix the wrong Docker hub path ([3eb364c](https://github.com/timoa/chrome-tab-rotate-server/commit/3eb364c0e9fede3b6751951785a63f601aed1866))
+
 ## [1.1.4](https://github.com/timoa/chrome-tab-rotate-server/compare/v1.1.3...v1.1.4) (2022-03-29)
 
 
