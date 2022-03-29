@@ -2,7 +2,7 @@ version: '3.3'
 
 services:
   api:
-    image: timoa/chrome-tab-rotate-server:latest
+    image: timoa/chrome-tab-rotate-server:latest@sha256:3058c5a960e48c01cec07ab7ebc25ab57c37f906dc11e66fa423d66735a8bdc8
     environment:
       - NODE_ENV=production
       - NODE_HOST=0.0.0.0
@@ -11,6 +11,6 @@ services:
     ports:
       - 9000:9000
     restart: always
-  
+
 volumes:
   config:
