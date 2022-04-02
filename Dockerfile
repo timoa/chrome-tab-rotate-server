@@ -1,5 +1,4 @@
-ARG nodeVersion=12.16.1
-FROM node:${nodeVersion}-alpine
+FROM node:16.14.2-alpine
 ARG appPort=9000
 # ARG microScannerToken
 
