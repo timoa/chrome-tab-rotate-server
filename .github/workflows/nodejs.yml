@@ -119,7 +119,7 @@ jobs:
     needs:
       - code-quality
       - code-security
-    if: github.ref == 'refs/heads/develop'
+    if: github.ref == 'refs/heads/master'
 
     steps:
       - name: Checkout
@@ -134,9 +134,7 @@ jobs:
   # -- BUILD ------------------------------------------------------------------
   build:
     runs-on: ubuntu-latest
-    needs:
-      - code-quality
-      - code-security
+    needs: release
     if: github.ref == 'refs/heads/master'
 
     steps:
