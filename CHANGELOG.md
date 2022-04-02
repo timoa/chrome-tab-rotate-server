@@ -1,3 +1,17 @@
+# [1.2.0](https://github.com/timoa/chrome-tab-rotate-server/compare/v1.1.8...v1.2.0) (2022-04-02)
+
+
+### Bug Fixes
+
+* **cicd:** last try to get the git tag for Docker tag creation ([a2c19c7](https://github.com/timoa/chrome-tab-rotate-server/commit/a2c19c722e49452e29e20402f15c4c0174c6d870))
+* **release:** fix release issue from wrong branch ([b81e75d](https://github.com/timoa/chrome-tab-rotate-server/commit/b81e75d8dca1587368b10a179660688228cd4fdf))
+* **version:** fix conflict with package-lock.json NPM format ([d5edaf9](https://github.com/timoa/chrome-tab-rotate-server/commit/d5edaf903868e96c197bb001d4528541f514499a))
+
+
+### Features
+
+* **node:** upgrade to node 16.x & NPM 8.x ([940c364](https://github.com/timoa/chrome-tab-rotate-server/commit/940c3642079024dfeea7d2d66e116dbdfd6b8e40))
+
 ## [1.1.9](https://github.com/timoa/chrome-tab-rotate-server/compare/v1.1.8...v1.1.9) (2022-03-29)
 
 
