@@ -1,7 +1,9 @@
 # Chrome-tab-rotate Webserver
 
+[![Latest Release][release-badge]][release-url]
 [![Build Status][github-badge]][github-url]
 [![Docker Pulls][docker-badge]][docker-url]
+
 [![Quality Gate Status][sonarcloud-status-badge]][sonarcloud-url]
 [![Security Rating][sonarcloud-security-badge]][sonarcloud-url]
 [![Maintainability Rating][sonarcloud-maintainability-badge]][sonarcloud-url]
@@ -152,6 +154,8 @@ npm run test:functional
 * Support multiple playlists for the same IP (2x HDMI on the RPi 4 for ex.)
 
 [sonarcloud]: https://sonarcloud.io/about
+[release-badge]: https://img.shields.io/github/v/release/timoa/chrome-tab-rotate-server?logoColor=orange
+[release-url]: https://github.com/timoa/chrome-tab-rotate-server/releases
 [github-badge]: https://github.com/timoa/chrome-tab-rotate-server/workflows/Build/badge.svg
 [github-url]: https://github.com/timoa/chrome-tab-rotate-server/actions?query=workflow%3ABuild
 [docker-badge]: https://img.shields.io/docker/pulls/timoa/chrome-tab-rotate-server.svg

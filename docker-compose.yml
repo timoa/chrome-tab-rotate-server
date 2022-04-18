@@ -2,12 +2,14 @@ version: '3.3'
 
 services:
   api:
-    image: timoa/chrome-tab-rotate-server:latest@sha256:b916ac408ace2161b7d74b6382f378606c581c1693cc34b91fac72330d248722
+    image: timoa/chrome-tab-rotate-server:latest@sha256:8ab7634d706ccd63d9c1945f45725b17bc876016a98a663b19dd596ebf02ea0d
     environment:
       - NODE_ENV=production
       - NODE_HOST=0.0.0.0
     volumes:
-      - ./config:/opt/app/config
+      - type: bind
+        source: ./config # You need to copy the config files example to the config folder at the root the project
+        target: /opt/app/config
     ports:
       - 9000:9000
     restart: always
