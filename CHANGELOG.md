@@ -1,3 +1,10 @@
+## [1.2.2](https://github.com/timoa/chrome-tab-rotate-server/compare/v1.2.1...v1.2.2) (2022-04-18)
+
+
+### Bug Fixes
+
+* **docker:** bind the local config folder to the Docker container ([cfabfad](https://github.com/timoa/chrome-tab-rotate-server/commit/cfabfad4a34efc410ef0570c8abcfb07ad0afe20))
+
 ## [1.2.1](https://github.com/timoa/chrome-tab-rotate-server/compare/v1.2.0...v1.2.1) (2022-04-16)
 
 
