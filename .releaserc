@@ -1,4 +1,5 @@
 {
+  "repositoryUrl": "https://github.com/timoa/chrome-tab-rotate-server.git",
   "branches": [
     "master",
     "develop"
