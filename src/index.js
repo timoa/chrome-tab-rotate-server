@@ -1,4 +1,7 @@
 const fastify = require('fastify')();
+const fastifyHelmet = require('@fastify/helmet');
+const fastifyHealthcheck = require('fastify-healthcheck');
+
 const logger = require('./lib/logger');
 const config = require('./config/config.json');
 const routes = require('./routes');
@@ -6,8 +9,13 @@ const routes = require('./routes');
 const host = process.env.NODE_HOST || '0.0.0.0';
 const port = process.env.NODE_PORT || config.app.port;
 
+// Register Helmet
+fastify.register(fastifyHelmet, {
+  global: true,
+});
+
 // Register the Health plugin
-fastify.register(require('fastify-healthcheck'), {
+fastify.register(fastifyHealthcheck, {
   healthcheckUrl: `/${config.healthCheck.path}`
 });
 
