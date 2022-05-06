@@ -14,7 +14,7 @@ jobs:
         uses: actions/checkout@dcd71f646680f2efd8db4afa5ad64fdcba30e748 # tag=v3.0.1
 
       - name: Run ESLint
-        uses: reviewdog/action-eslint@v1
+        uses: reviewdog/action-eslint@d3395027ea2cfc5cf8f460b1ea939b6c86fea656 # tag=v1
 
   # -- DOCKER -----------------------------------------------------------------
   hadolint:
