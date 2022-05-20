@@ -1,3 +1,18 @@
+## [1.3.1](https://github.com/timoa/chrome-tab-rotate-server/compare/v1.3.0...v1.3.1) (2022-05-20)
+
+
+### Bug Fixes
+
+* **deps:** update dependency @snyk/protect to v1.910.0 ([d670504](https://github.com/timoa/chrome-tab-rotate-server/commit/d6705042c8eb16602a6d10dcb04bfaad014bba47))
+* **deps:** update dependency @snyk/protect to v1.912.0 ([da69685](https://github.com/timoa/chrome-tab-rotate-server/commit/da6968533368ee3121fbd9553950df2a570aebe9))
+* **deps:** update dependency @snyk/protect to v1.914.0 ([c01d0c8](https://github.com/timoa/chrome-tab-rotate-server/commit/c01d0c8e16237364fd6060810f91582feef0e6f5))
+* **deps:** update dependency @snyk/protect to v1.915.0 ([e45b692](https://github.com/timoa/chrome-tab-rotate-server/commit/e45b6922486a324d47fd099bd7bacdcb6e2d6561))
+* **deps:** update dependency @snyk/protect to v1.917.0 ([67ee447](https://github.com/timoa/chrome-tab-rotate-server/commit/67ee44797d24096952fc04e974140e1096f2f235))
+* **deps:** update dependency @snyk/protect to v1.918.0 ([de4dddd](https://github.com/timoa/chrome-tab-rotate-server/commit/de4dddde788870b8a860e97132e604ecb7a3dcbc))
+* **deps:** update dependency @snyk/protect to v1.919.0 ([7c88d86](https://github.com/timoa/chrome-tab-rotate-server/commit/7c88d86677cb3b9b65953d5e9239b575ba476e2a))
+* **deps:** update dependency fastify to v3.29.0 ([6775f60](https://github.com/timoa/chrome-tab-rotate-server/commit/6775f60e1a5c6af657223df73912f19778dff95c))
+* **deps:** update dependency fastify-swagger to v5.2.0 ([a7e3532](https://github.com/timoa/chrome-tab-rotate-server/commit/a7e353288e93e8f16df37f8272bb073cea380538))
+
 # [1.3.0](https://github.com/timoa/chrome-tab-rotate-server/compare/v1.2.2...v1.3.0) (2022-05-05)
 
 
