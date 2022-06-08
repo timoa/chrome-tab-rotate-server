@@ -1,4 +1,4 @@
-FROM node:16.15.1-alpine@sha256:1fafca8cf41faf035192f5df1a5387656898bec6ac2f92f011d051ac2344f5c9
+FROM node:16.15.1-alpine@sha256:c785e617c8d7015190c0d41af52cc69be8a16e3d9eb7cb21f0bb58bcfca14d6b
 ARG appPort=9000
 # ARG microScannerToken
 
