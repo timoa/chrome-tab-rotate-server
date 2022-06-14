@@ -38,7 +38,7 @@
   },
   "homepage": "https://github.com/timoa/chrome-tab-rotate-server#readme",
   "dependencies": {
-    "@snyk/protect": "1.940.0",
+    "@snyk/protect": "1.942.0",
     "@fastify/helmet": "8.1.0",
     "boom": "7.3.0",
     "fastify": "3.29.0",
