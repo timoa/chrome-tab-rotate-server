@@ -193,7 +193,7 @@ jobs:
       - name: Run ZAP Scan
         uses: zaproxy/action-full-scan@6eade0f93b10fad8cfb4e63b979703a2cbd0cc98 # tag=v0.4.0
         with:
-          target: http://localhost:3000
+          target: http://localhost:9000
 
   # -- PRE-RELEASE ------------------------------------------------------------
   pre-release:
