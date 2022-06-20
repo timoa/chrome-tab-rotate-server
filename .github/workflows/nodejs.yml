@@ -44,7 +44,6 @@ jobs:
           cp -R src/examples/playlists config/playlists
           cp src/examples/inventory.json config/inventory.json
 
-
       - name: Run Unit-Tests + Code Coverage
         run: npm run test:coverage
 
@@ -153,6 +152,49 @@ jobs:
           name: reports
           path: reports
 
+  # -- ZAP Scan ---------------------------------------------------------------
+  api-security:
+    name: API Security
+    runs-on: ubuntu-latest
+    needs: tests
+    # Skip any PR created by dependabot to avoid permission issues
+    if: (github.actor != 'dependabot[bot]')
+
+    strategy:
+      matrix:
+        node: ['16']
+
+    steps:
+      - name: Harden GitHub Actions Runner
+        uses: step-security/harden-runner@cdea734fa57747b9831aa9d6fcb274c5f9669557
+        with:
+          egress-policy: audit
+
+      - name: Checkout
+        uses: actions/checkout@2541b1294d2704b0964813337f33b291d3f8596b # tag=v3.0.2
+
+      - name: Setup Node.js ${{ matrix.node }}
+        uses: actions/setup-node@eeb10cff27034e7acf239c5d29f62154018672fd # tag=v3.3.0
+        with:
+          node-version: ${{ matrix.node }}
+          check-latest: true
+
+      - name: Install dependencies
+        run: npm install
+
+      - name: Copy Playlists & Inventory examples
+        run: |
+          cp -R src/examples/playlists config/playlists
+          cp src/examples/inventory.json config/inventory.json
+
+      - name: Start the app
+        run: npm start > /dev/null &
+
+      - name: Run ZAP Scan
+        uses: zaproxy/action-full-scan@6eade0f93b10fad8cfb4e63b979703a2cbd0cc98 # tag=v0.4.0
+        with:
+          target: http://localhost:3000
+
   # -- PRE-RELEASE ------------------------------------------------------------
   pre-release:
     name: Prepare Release
@@ -160,6 +202,7 @@ jobs:
     needs:
       - code-quality
       - code-security
+      - api-security
     if: github.ref == 'refs/heads/master'
 
     steps:
