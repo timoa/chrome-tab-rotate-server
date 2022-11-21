@@ -41,7 +41,7 @@
     "@snyk/protect": "1.1053.0",
     "@fastify/helmet": "8.1.0",
     "boom": "7.3.0",
-    "fastify": "3.29.3",
+    "fastify": "3.29.4",
     "fastify-healthcheck": "3.2.0",
     "fastify-swagger": "5.2.0",
     "http": "0.0.0",
