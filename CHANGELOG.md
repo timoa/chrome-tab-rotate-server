@@ -1,3 +1,10 @@
+## [1.3.2](https://github.com/timoa/chrome-tab-rotate-server/compare/v1.3.1...v1.3.2) (2023-01-10)
+
+
+### Bug Fixes
+
+* package.json & package-lock.json to reduce vulnerabilities ([99a90b9](https://github.com/timoa/chrome-tab-rotate-server/commit/99a90b9f85a8c486bb29d9c18a8fb5ee7269902d))
+
 ## [1.3.1](https://github.com/timoa/chrome-tab-rotate-server/compare/v1.3.0...v1.3.1) (2022-05-20)
 
 
