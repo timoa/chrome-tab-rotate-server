@@ -139,6 +139,10 @@ jobs:
             pipelines.actions.githubusercontent.com:443
             registry.npmjs.org:443
             pypi.org:443
+            osv-vulnerabilities.storage.googleapis.com:443
+            nvd.nist.gov:443
+            docker.io:443
+            registry-1.docker.io:443
 
       - name: Checkout
         uses: actions/checkout@755da8c3cf115ac066823e79a1e1788f8940201b # v3.2.0
