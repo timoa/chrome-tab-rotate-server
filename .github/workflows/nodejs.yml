@@ -143,6 +143,7 @@ jobs:
             nvd.nist.gov:443
             docker.io:443
             registry-1.docker.io:443
+            auth.docker.io:443
 
       - name: Checkout
         uses: actions/checkout@755da8c3cf115ac066823e79a1e1788f8940201b # v3.2.0
