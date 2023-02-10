@@ -1,4 +1,4 @@
-const boom = require('boom');
+const boom = require('@hapi/boom');
 const path = require('path');
 const fs = require('fs');
 
