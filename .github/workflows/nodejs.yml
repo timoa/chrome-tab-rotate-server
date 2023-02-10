@@ -190,6 +190,11 @@ jobs:
       - name: Install dependencies
         run: npm install
 
+      - name: Copy Playlists & Inventory examples
+        run: |
+          cp -R src/examples/playlists config/playlists
+          cp src/examples/inventory.json config/inventory.json
+
       - name: Install Postman Newman
         run: npm install newman
 
