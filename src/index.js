@@ -25,16 +25,15 @@ routes.forEach(route => {
 });
 
 // Start the Fastify HTTP server
-const start = async () => {
+(async function start() {
   try {
     await fastify.listen({ port, host })
-      .then(address => {
+      .then((address) => {
+        fastify.swagger();
         logger.info(`Server listening on ${address}`);
       });
   } catch (err) {
     logger.error(err);
     process.exit(1);
   }
-};
-
-start();
+}());
