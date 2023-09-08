@@ -243,7 +243,7 @@ jobs:
         run: npm start > /dev/null &
 
       - name: Run ZAP Scan
-        uses: zaproxy/action-full-scan@c8994d4f913cf872ec9964ac2d998c9bec369060 # v0.6.0
+        uses: zaproxy/action-full-scan@e058236b1221595033527ccc8a79959c7396d53f # v0.7.0
         with:
           target: http://localhost:9000
 
