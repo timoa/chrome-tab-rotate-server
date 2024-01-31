@@ -15,7 +15,7 @@ jobs:
 
     steps:
       - name: Harden GitHub Actions Runner
-        uses: step-security/harden-runner@63c24ba6bd7ba022e95695ff85de572c04a18142
+        uses: step-security/harden-runner@63a88e2cd75233b3d4417f2b13a25a46914b4b52
         with:
           egress-policy: block
           allowed-endpoints: >
@@ -61,7 +61,7 @@ jobs:
 
     steps:
       - name: Harden GitHub Actions Runner
-        uses: step-security/harden-runner@63c24ba6bd7ba022e95695ff85de572c04a18142
+        uses: step-security/harden-runner@63a88e2cd75233b3d4417f2b13a25a46914b4b52
         with:
           egress-policy: block
           allowed-endpoints: >
@@ -130,7 +130,7 @@ jobs:
 
     steps:
       - name: Harden GitHub Actions Runner
-        uses: step-security/harden-runner@63c24ba6bd7ba022e95695ff85de572c04a18142
+        uses: step-security/harden-runner@63a88e2cd75233b3d4417f2b13a25a46914b4b52
         with:
           egress-policy: block
           allowed-endpoints: >
@@ -174,7 +174,7 @@ jobs:
 
     steps:
       - name: Harden GitHub Actions Runner
-        uses: step-security/harden-runner@63c24ba6bd7ba022e95695ff85de572c04a18142
+        uses: step-security/harden-runner@63a88e2cd75233b3d4417f2b13a25a46914b4b52
         with:
           egress-policy: audit
 
@@ -218,7 +218,7 @@ jobs:
 
     steps:
       - name: Harden GitHub Actions Runner
-        uses: step-security/harden-runner@63c24ba6bd7ba022e95695ff85de572c04a18142
+        uses: step-security/harden-runner@63a88e2cd75233b3d4417f2b13a25a46914b4b52
         with:
           egress-policy: audit
 
@@ -259,7 +259,7 @@ jobs:
 
     steps:
       - name: Harden GitHub Actions Runner
-        uses: step-security/harden-runner@63c24ba6bd7ba022e95695ff85de572c04a18142
+        uses: step-security/harden-runner@63a88e2cd75233b3d4417f2b13a25a46914b4b52
         with:
           egress-policy: audit
 
@@ -280,7 +280,7 @@ jobs:
 
     steps:
       - name: Harden GitHub Actions Runner
-        uses: step-security/harden-runner@63c24ba6bd7ba022e95695ff85de572c04a18142
+        uses: step-security/harden-runner@63a88e2cd75233b3d4417f2b13a25a46914b4b52
         with:
           egress-policy: audit
 
